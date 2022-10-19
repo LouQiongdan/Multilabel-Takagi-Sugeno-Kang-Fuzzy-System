@@ -1,5 +1,5 @@
 
-function [model_LLSF] = ML_TSKFS( X, Y, optmParameter)
+function [model_W] = ML_TSKFS( X, Y, optmParameter)
     
    %% optimization parameters
     alpha            = optmParameter.alpha;
@@ -48,7 +48,7 @@ function [model_LLSF] = ML_TSKFS( X, Y, optmParameter)
        
        iter=iter+1;
     end
-    model_LLSF = W_s;
+    model_W = W_s;
 
 end
 
